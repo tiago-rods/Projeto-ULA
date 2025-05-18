@@ -12,15 +12,6 @@ END multiplicador;
 
 ARCHITECTURE logica OF multiplicador IS
 
--- Declaração do componente
-COMPONENT fullAdder IS --full adder será utilizado para fazer as somas de produtos parciais
-PORT 
-(
-    x, y, Cin  : IN STD_LOGIC;
-    Soma, Cout : OUT STD_LOGIC
-);
-END COMPONENT;
-
 -- Sinais intermediários
 SIGNAL PP : STD_LOGIC_VECTOR(2 DOWNTO 0); -- Produtos parciais
 SIGNAL C1 : STD_LOGIC; -- Carry do primeiro estágio

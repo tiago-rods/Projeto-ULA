@@ -2,13 +2,12 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE work.projeto_pkg.all;
 
-ENTITY fullAdder is
-PORT 
-(
-		x, y, Cin : IN STD_LOGIC; -- números a serem somados 
-		Soma, Cout : OUT STD_LOGIC -- saidas e carry out
-);
-
+entity fullAdder IS
+	PORT 
+	(
+		 x, y, Cin  : IN STD_LOGIC;
+		 Soma, Cout : OUT STD_LOGIC
+	);
 END fullAdder;
 
 ARCHITECTURE logica of fullAdder IS
